@@ -263,7 +263,7 @@
         <div class="col-lg-5 col-md-12 panel-left">
             
             <div class="mb-5 d-none d-lg-block"> <h4 class="fw-bold text-white mb-1">Calculadora Salarial SV</h4>
-                <p class="text-white-50 small opacity-75">Calculadora Automatizada de Deducciones Fiscales y Beneficios de la Ley Quincena 25</p>
+                <p class="text-white-50 small opacity-75">Calculadora Automatizada de Deducciones Fiscales</p>
             </div>
 
             <div class="mb-4 d-lg-none text-center"> <h4 class="fw-bold text-white">Calculadora Salarial SV</h4>
@@ -377,7 +377,7 @@
                         </a>
                     </div>
 
-                    @if(isset($data['q25']) && $data['q25']['applies'])
+                    {{-- @if(isset($data['q25']) && $data['q25']['applies'])
                         <div class="gold-card animate__animated animate__pulse p-4 mt-4"> 
                             <div class="gold-tag shadow-sm">
                                 Bono {{ ['','Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'][date('n')] }}
@@ -394,7 +394,7 @@
                                         <div class="mb-1">
                                             <span class="badge bg-white text-dark border border-warning fw-normal rounded-pill px-2">
                                                 <i class="fa-regular fa-calendar me-1 text-warning"></i> 
-                                                15-25 {{ ['','Enero'][date('n')] }}
+                                                15-25 {{ ['','Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'][date('n')] }}
                                             </span>
                                         </div>
                                         <p class="mb-0 small opacity-75 fw-medium" style="color: #92400e">
@@ -413,7 +413,7 @@
                         <div class="mt-3 text-center border rounded p-3 bg-light opacity-50 small">
                             <i class="fa-solid fa-ban me-1"></i> No aplica a Bono Q25
                         </div>
-                    @endif
+                    @endif --}}
 
                 </div>
             @else
