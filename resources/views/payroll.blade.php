@@ -394,7 +394,7 @@
                                         <div class="mb-1">
                                             <span class="badge bg-white text-dark border border-warning fw-normal rounded-pill px-2">
                                                 <i class="fa-regular fa-calendar me-1 text-warning"></i> 
-                                                15-25 {{ ['','Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'][date('n')] }}
+                                                15-25 {{ ['','Enero'][date('n')] }}
                                             </span>
                                         </div>
                                         <p class="mb-0 small opacity-75 fw-medium" style="color: #92400e">
