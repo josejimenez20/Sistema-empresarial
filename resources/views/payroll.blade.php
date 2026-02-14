@@ -12,17 +12,17 @@
 
     <style>
         :root {
-            --primary: #4f46e5;       /* Indigo moderno */
+            --primary: #4f46e5;       
             --primary-dark: #3730a3;
-            --secondary: #1e293b;     /* Slate Dark */
-            --accent-green: #10b981;  /* Emerald */
-            --accent-gold: #f59e0b;   /* Amber */
+            --secondary: #1e293b;     
+            --accent-green: #10b981;  
+            --accent-gold: #f59e0b;   
             --bg-gradient: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
         }
 
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
-            background: #0f172a; /* Fondo base oscuro por si falla el gradiente */
+            background: #0f172a; 
             background-image: radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
                               radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%), 
                               radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);
@@ -33,23 +33,21 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 15px; /* Padding para que no pegue a los bordes en celular */
+            padding: 15px; 
         }
 
-        /* Contenedor Principal Flotante */
         .main-app-container {
             background: #ffffff;
             border-radius: 24px;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); /* Sombra más profunda */
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); 
             overflow: hidden;
             width: 100%;
             max-width: 1100px;
-            /* Altura mínima solo en PC para que se vea elegante */
             min-height: 680px; 
             display: flex;
         }
 
-        /* COLUMNA IZQUIERDA (OSCURA) */
+    
         .panel-left {
             background-color: var(--secondary);
             color: white;
@@ -71,7 +69,6 @@
             z-index: -1;
         }
 
-        /* Inputs Oscuros */
         .form-label {
             color: #94a3b8;
             font-size: 0.75rem;
@@ -101,7 +98,6 @@
         
         .custom-input::placeholder { color: #64748b; }
 
-        /* Botón Principal */
         .btn-brand {
             background: var(--primary);
             color: white;
@@ -122,7 +118,6 @@
             box-shadow: 0 20px 25px -5px rgba(79, 70, 229, 0.5);
         }
 
-        /* COLUMNA DERECHA (CLARA) */
         .panel-right {
             background: #fff;
             padding: 40px;
@@ -131,7 +126,6 @@
             justify-content: center;
         }
 
-        /* Elementos de la Boleta */
         .avatar-section {
             display: flex;
             align-items: center;
@@ -141,7 +135,7 @@
         .avatar-initial {
             width: 60px;
             height: 60px;
-            min-width: 60px; /* Evita que se aplaste en móvil */
+            min-width: 60px; 
             background: linear-gradient(135deg, #4f46e5 0%, #818cf8 100%);
             color: white;
             font-size: 1.5rem;
@@ -165,7 +159,7 @@
         .amount-negative { color: #ef4444; font-weight: 600; }
         .amount-positive { color: var(--secondary); font-weight: 700; }
 
-        /* Tarjetas de Totales */
+       
         .net-salary-card {
             background: #f0fdf4;
             border: 1px solid #bbf7d0;
@@ -173,13 +167,13 @@
             padding: 20px;
             text-align: center;
             margin-top: 10px;
-            height: 100%; /* Para que tengan la misma altura */
+            height: 100%; 
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
 
-        /* Tarjeta Dorada */
+      
         .gold-card {
             background: linear-gradient(135deg, #fffbeb 0%, #fcd34d 100%);
             border: 1px solid #fcd34d;
@@ -202,7 +196,7 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
-        /* Botón PDF */
+      
         .btn-pdf-modern {
             background: #ef4444;
             color: white;
@@ -223,34 +217,33 @@
             box-shadow: 0 10px 15px -3px rgba(239, 68, 68, 0.3);
         }
 
-        /* --- RESPONSIVE DESIGN (LA MAGIA) --- */
         @media (max-width: 991px) {
             body {
-                align-items: flex-start; /* En móvil, alinear arriba para poder scrollear */
+                align-items: flex-start; 
                 padding: 10px;
                 height: auto;
                 min-height: 100vh;
             }
             
             .main-app-container {
-                flex-direction: column; /* Apilar columnas */
-                min-height: auto; /* Altura automática */
+                flex-direction: column; 
+                min-height: auto; 
                 height: auto;
                 margin-top: 10px;
                 margin-bottom: 20px;
             }
             
             .panel-left, .panel-right {
-                padding: 30px 20px; /* Menos padding en móvil */
+                padding: 30px 20px; 
                 width: 100%;
             }
 
             .panel-left {
-                padding-bottom: 40px; /* Espacio extra abajo del botón */
+                padding-bottom: 40px; 
             }
 
             .display-6 {
-                font-size: 2rem; /* Texto un poco más pequeño en móvil */
+                font-size: 2rem; 
             }
         }
     </style>
@@ -302,6 +295,12 @@
                 </div>
             </form>
             
+            <div class="mt-5 pt-4 border-top border-light border-opacity-10 text-center">
+                <p class="text-white-50 small mb-3">Módulos Adicionales</p>
+                <a href="/contabilidad" class="btn btn-outline-light w-100" style="border-radius: 12px; border-color: rgba(255,255,255,0.1); color: #94a3b8;">
+                    <i class="fa-solid fa-book-journal-whills me-2 text-warning"></i> Práctica Contable
+                </a>
+            </div>
             <div class="mt-auto pt-4 text-center opacity-25 small d-none d-lg-block">
                 &copy; 2026 Sistema Empresarial | José Jiménez
             </div>
