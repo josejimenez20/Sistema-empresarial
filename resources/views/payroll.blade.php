@@ -298,7 +298,7 @@
             <div class="mt-5 pt-4 border-top border-light border-opacity-10 text-center">
                 <p class="text-white-50 small mb-3">Módulos Adicionales</p>
                 <a href="/contabilidad" class="btn btn-outline-light w-100" style="border-radius: 12px; border-color: rgba(255,255,255,0.1); color: #94a3b8;">
-                    <i class="fa-solid fa-book-journal-whills me-2 text-warning"></i> Práctica Contable
+                    <i class="fa-solid fa-book-journal-whills me-2 text-warning"></i> Libro Diario
                 </a>
             </div>
             <div class="mt-auto pt-4 text-center opacity-25 small d-none d-lg-block">
